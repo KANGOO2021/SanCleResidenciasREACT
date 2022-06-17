@@ -4,7 +4,9 @@ import images from '../assets/js/imagesmedanos'
 import '../assets/css/slider.css'
 import { motion } from 'framer-motion'
 
-document.addEventListener('touchstart', { passive: true });
+import mapa_medanos from "../assets/img/mapa_medanos.png";
+
+
 const Medanos = () => {
     return (  
 <>
@@ -34,7 +36,7 @@ const Medanos = () => {
          <motion.div className='slider-container'>
           <motion.div className='slider' drag='x' 
             dragConstraints={{ right: -20, left: -12500}}
-               dragElastic={1}     >
+               dragElastic={0.01}     >
                {images.map((image,i) => (
                    <motion.div className='item' key={i}>
                       <img src={image} alt="" />
@@ -91,13 +93,18 @@ const Medanos = () => {
                 <h1>Ubicación:</h1>
             </div>
             <div>
-                <p className="mp ">
+                <p className="mp">
                     Calle 32 Bis 88 PB Dpto:23
                 </p>
             </div>
-        <div className="mlocation">
-             <iframe title="Ubicación Dpto Médanos" id="lmed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6426.856478890625!2d-56.72660856768686!3d-36.35040475949783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959c1d71df17470f%3A0x7e0ca61cea2ade0a!2sC.%2032%20Bis%2088%2C%20San%20Clemente%20del%20Tuyu%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1655067162155!5m2!1ses-419!2sar" style={{ border: "1px solid black", allowfullscreen: "", loading: "lazy", alt:""}}></iframe>
-                        
+         <div className="mlocation" id="lmed1">     
+                   <div>
+                     <img  id="lmed" style={{ border: "1px solid black"}} src={mapa_medanos} alt=""/>
+                   </div>
+           {/*   <iframe title="Ubicación Dpto Médanos" id="lmed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6426.856478890625!2d-56.72660856768686!3d-36.35040475949783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959c1d71df17470f%3A0x7e0ca61cea2ade0a!2sC.%2032%20Bis%2088%2C%20San%20Clemente%20del%20Tuyu%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1655067162155!5m2!1ses-419!2sar" style={{ border: "1px solid black", allowfullscreen: "", loading: "lazy", alt:""}}></iframe> */}
+              <div>
+                <button type="button" className="btn" id="btnm"><a href="https://www.google.com/maps/place/C.+32+Bis+88,+San+Clemente+del+Tuyu,+Provincia+de+Buenos+Aires/@-36.3523075,-56.7255404,16z/data=!4m5!3m4!1s0x959c1d71df17470f:0x7e0ca61cea2ade0a!8m2!3d-36.3504091!4d-56.7222312?hl=es-419" target="_blank ">¿Cómo llegar?</a></button>
+                </div>           
          </div>
         </section>
      

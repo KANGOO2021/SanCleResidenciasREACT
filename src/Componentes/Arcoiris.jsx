@@ -4,6 +4,8 @@ import images from '../assets/js/imagesarcoiris'
 import '../assets/css/slider.css'
 import { motion } from 'framer-motion'
 
+import mapa_arcoiris from "../assets/img/mapa_arcoiris.png";
+
 
 const Arcoiris = () => {
 
@@ -37,7 +39,7 @@ const Arcoiris = () => {
        <motion.div className='slider-container'>
           <motion.div className='slider' drag='x' 
              dragConstraints={{ right: -20, left: -13400 }}
-               dragElastic={0.5}>
+               dragElastic={0.01}>
                {images.map((image,i) => (
                    <motion.div className='item' key={i}>
                       <img src={image} alt="" />
@@ -97,9 +99,19 @@ const Arcoiris = () => {
                     Av. San Martín 350 Piso:1 Dpto:16
                 </p>
             </div>
-            <div className="alocation">
-                          <iframe title="Ubicación Dpto Arcoiris" id="larco" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6426.29648543486!2d-56.7260213380479!3d-36.35718798927618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959c1b5ee0efca1f%3A0xbc0e26705b77956!2sAv.%20San%20Mart%C3%ADn%20350%2C%20B7105%20San%20Clemente%20del%20Tuyu%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1655066241577!5m2!1ses-419!2sar" style={{border: "1px solid black", allowfullscreen:"", loading:"lazy", alt:"" }}></iframe>
-                    </div>
+            <div className="alocation" id="larco1">
+                    <div>
+                        <img  id="larco" style={{ border: "1px solid black"}} src={mapa_arcoiris} alt=""/>
+                   </div>
+           
+                        {/* <iframe title="Ubicación Dpto Arcoiris" id="larco" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6426.29648543486!2d-56.7260213380479!3d-36.35718798927618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959c1b5ee0efca1f%3A0xbc0e26705b77956!2sAv.%20San%20Mart%C3%ADn%20350%2C%20B7105%20San%20Clemente%20del%20Tuyu%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1655066241577!5m2!1ses-419!2sar" style={{ border: "1px solid black", allowfullscreen: "", loading: "lazy", alt: "" }}></iframe>  */}
+                     
+                <div>
+                <button type="button" className="btn" id="btna"><a href="https://www.google.com.ar/maps/place/Av.+San+Mart%C3%ADn+350,+B7105+San+Clemente+del+Tuyu,+Provincia+de+Buenos+Aires/@-36.358618,-56.7236288,16z/data=!4m5!3m4!1s0x959c1b5ee0efca1f:0xbc0e26705b77956!8m2!3d-36.3574861!4d-56.7228456" target="_blank ">¿Cómo llegar?</a></button>
+                </div>
+            </div>
+                        
+           
                    
         </section> 
      </main>

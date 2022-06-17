@@ -618,7 +618,7 @@
 
  .alocation {
    margin-top: 10px;
-   margin-bottom: 20px;
+   margin-bottom: 10px;
  }
 /*DPTO MEDANOS*/
 
@@ -805,6 +805,7 @@
 }
 
 .mlocation {
+  align-items: center;
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -1386,6 +1387,7 @@
     font-family: 'Roboto', sans-serif;
     margin-top: 30px;
     margin-bottom: 20px;
+    margin-left: 10px;
   }
 
   .container_table {
@@ -1476,15 +1478,40 @@
     margin-bottom: 20px;
   }
 
+
+ #larco1 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+
   #larco {
-    width: 100%;
-    height: 300px;
-  }
+       width: 100%;
+       height: 100%;
+     }
 
   .arcoiris {
     margin-top: -430px;
     transition: all 1s;
   }
+
+  #btna {
+   
+    align-items: center;
+    background-color: rgb(112, 180, 241);
+    padding: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+     }
+
+
+
+
+
   /*MEDANOS*/
   .mtittle {
     font-family: 'Roboto', sans-serif;
@@ -1583,6 +1610,7 @@
     font-family: 'Roboto', sans-serif;
     margin-top: 30px;
     margin-bottom: 20px;
+    margin-left: 5px;
   }
 
   .container_table {
@@ -1676,15 +1704,33 @@
     margin-bottom: 20px;
   }
 
+  #lmed1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
   #lmed {
     width: 100%;
-    height: 300px;
+    height: 100%;
   }
 
   .medanos {
     margin-top: -430px;
     transition: all 1s;
   }
+
+  #btnm {
+    
+   align-items: center;
+   background-color: rgb(112, 180, 241);
+   padding: 10px;
+   border-radius: 15px;
+   text-decoration: none;
+   border: none;
+   margin-top: 20px;
+   margin-bottom: 10px;
+   }
 }
 
 @media (min-width: 541px) and (max-width: 1030px) {
