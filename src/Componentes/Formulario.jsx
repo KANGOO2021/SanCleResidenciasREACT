@@ -15,9 +15,11 @@ const Formulario = () => {
     const [mensaje, setMensaje] = useState('');
 
 
-    const handleSubmit = async (e) => {  
+
+    const handleSubmit = async (e) => { 
+    const URI_SERVER = process.env.REACT_APP_URI_SERVER;
      e.preventDefault();
-       await axios.post(process.env.REACT_APP_URI_SERVER, {
+       await axios.post(URI_SERVER, {
             nombre: nombre,
             email: email,
             whatsapp: whatsapp,
