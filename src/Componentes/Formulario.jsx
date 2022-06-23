@@ -4,6 +4,8 @@ import { useState } from "react";
 import axios from "axios";
 import Swal from "sweetalert2";
 
+import Loader from "./Loader";
+
 
 const Formulario = () => {
 
@@ -14,25 +16,35 @@ const Formulario = () => {
     const [fecha_salida, setFecha_salida] = useState('');
     const [mensaje, setMensaje] = useState('');
 
-
-
-    const handleSubmit = async (e) => { 
-    const URI_SERVER = process.env.REACT_APP_URI_SERVER;
-     e.preventDefault();
-       await axios.post(URI_SERVER, {
+    const [loading, setLoading] = useState('false');
+    
+    const items = {
             nombre: nombre,
             email: email,
             whatsapp: whatsapp,
             fecha_ingreso: fecha_ingreso,
             fecha_salida: fecha_salida,
             mensaje: mensaje
-        })
+        };
+
+    const handleSubmit = async (e) => { 
+
+    const URI_SERVER = process.env.REACT_APP_URI_SERVER;
+    e.preventDefault();
+       
+        setLoading(false)
+
+        await axios.post(URI_SERVER, items)
+        
         Swal.fire({
         title: 'Consulta enviada exitosamente',
         text: "Gracias por contactarnos!",
         icon: 'success',
         confirmButtonText: 'Aceptar'
-    })
+        })
+        
+        setLoading(true)
+
         setNombre('');
         setEmail('');
         setWhatsapp('');
@@ -79,7 +91,8 @@ const Formulario = () => {
                     <input type="submit" value="ENVIAR" className="button" id="send"/>
             </div>
 
-        </form>
+            </form>
+            {!loading && <Loader />}
         </section>
   );
 };
