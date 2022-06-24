@@ -16,25 +16,26 @@ const Formulario = () => {
     const [fecha_salida, setFecha_salida] = useState('');
     const [mensaje, setMensaje] = useState('');
 
-    const [loading, setLoading] = useState('false');
+    const [loading, setLoading] = useState(false);
     
-    const items = {
-            nombre: nombre,
-            email: email,
-            whatsapp: whatsapp,
-            fecha_ingreso: fecha_ingreso,
-            fecha_salida: fecha_salida,
-            mensaje: mensaje
-        };
 
     const handleSubmit = async (e) => { 
 
     const URI_SERVER = process.env.REACT_APP_URI_SERVER;
     e.preventDefault();
        
-        setLoading(false)
+        setLoading(true)
 
-        await axios.post(URI_SERVER, items)
+        await axios.post(URI_SERVER, {
+            nombre: nombre,
+            email: email,
+            whatsapp: whatsapp,
+            fecha_ingreso: fecha_ingreso,
+            fecha_salida: fecha_salida,
+            mensaje: mensaje
+        })
+
+        setLoading(false)
         
         Swal.fire({
         title: 'Consulta enviada exitosamente',
@@ -43,8 +44,6 @@ const Formulario = () => {
         confirmButtonText: 'Aceptar'
         })
         
-        setLoading(true)
-
         setNombre('');
         setEmail('');
         setWhatsapp('');
@@ -92,7 +91,7 @@ const Formulario = () => {
             </div>
 
             </form>
-            {!loading && <Loader />}
+            {loading && <Loader />}
         </section>
   );
 };
