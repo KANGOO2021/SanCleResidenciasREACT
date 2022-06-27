@@ -13,11 +13,11 @@ import Contacto from './Componentes/Contacto'; */
 
 /* import Arcoiris from './Componentes/Arcoiris';
 import Medanos from './Componentes/Medanos'; */
-import Loader from './Componentes/Loader';
+import Loader from './Componentes/Loader'
 
 const Navegacion = lazy(() => import("./Componentes/Navegacion"))
 const Home = lazy(() => import("./Componentes/Home"))
-const Footer = lazy(() => import("./Componentes/Home"))
+const Footer = lazy(() => import("./Componentes/Footer"))
 const Arcoiris = lazy(() => import("./Componentes/Arcoiris"))
 const Medanos = lazy(() => import("./Componentes/Medanos"))
 const Formulario = lazy(() => import("./Componentes/Formulario"))
@@ -28,13 +28,13 @@ const Traslados = lazy(() => import("./Componentes/Traslados"))
 
 function App() {
   return (
-    
+  <> 
     <Suspense fallback={<Loader />}>
       <Navegacion />
 
       <Routes>
 
-        <Route exact path="/" element={<Home />} />
+        <Route exact path="/home" element={<Home />} />
 
         <Route exact path="/arcoiris" element={<Arcoiris />} />
 
@@ -50,7 +50,7 @@ function App() {
 
       <Footer />
   </Suspense>
-    
+</>     
   );
 }
 

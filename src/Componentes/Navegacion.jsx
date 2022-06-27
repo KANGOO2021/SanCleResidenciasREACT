@@ -62,7 +62,7 @@ const Navegacion = () => {
               <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
                 <div>
                   <FaHome />
-                  <NavLink to="/">INICIO</NavLink>
+                  <NavLink to="/home">INICIO</NavLink>
                 </div>
               </MenuItemLink>
             </MenuItem>
@@ -116,7 +116,7 @@ const Navegacion = () => {
 
         <ul className="menu">
             <li>
-                <NavLink to="/">HOME</NavLink>
+                <NavLink to="/home">HOME</NavLink>
             </li>
                  <li className="content">
                     <div className="dropdown">
