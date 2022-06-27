@@ -1,7 +1,7 @@
 import React from "react";
-import mundomarino from "../assets/img/mundo marino.jpg";
-import termasmarinas from "../assets/img/termas1.jpg";
-import facebook from "../assets/img/facebook-logo-3-1.png";
+import mundomarino from "../assets/img/mundo marino.webp";
+import termasmarinas from "../assets/img/termas1.webp";
+import facebook from "../assets/img/facebook-logo-3-1.webp";
 
 
 const Home = () => {

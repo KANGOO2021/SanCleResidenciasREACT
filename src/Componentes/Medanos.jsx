@@ -4,7 +4,7 @@ import images from '../assets/js/imagesmedanos'
 import '../assets/css/slider.css'
 import { motion } from 'framer-motion'
 
-import mapa_medanos from "../assets/img/mapa_medanos.png";
+import mapa_medanos from "../assets/img/mapa_medanos.webp";
 
 
 const Medanos = () => {

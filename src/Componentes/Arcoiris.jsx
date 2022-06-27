@@ -4,7 +4,7 @@ import images from '../assets/js/imagesarcoiris'
 import '../assets/css/slider.css'
 import { motion } from 'framer-motion'
 
-import mapa_arcoiris from "../assets/img/mapa_arcoiris.png";
+import mapa_arcoiris from "../assets/img/mapa_arcoiris.webp";
 
 const Arcoiris = () => {
 

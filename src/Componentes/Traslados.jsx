@@ -1,8 +1,8 @@
 import React from "react";
 
-import collagearcoiris from "../assets/img/collagearcoiris.jpeg";
+import collagearcoiris from "../assets/img/collagearcoiris.webp";
 
-import collagemedanos from "../assets/img/collagemedanos.jpeg";
+import collagemedanos from "../assets/img/collagemedanos.webp";
 
 
 const Traslados = () => {

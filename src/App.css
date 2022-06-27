@@ -130,7 +130,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 5px;
-    background-image: url(./assets/img/SanClemente1.jpg); 
+    background-image: url(./assets/img/SanClemente1.webp); 
     border-radius: 15px;
   }
 
@@ -237,7 +237,7 @@
   }
 
   .fsection {
-    background-image: url(./assets/img/fondoform2.jpg);
+    background-image: url(./assets/img/fondoform2.webp);
     background-size: cover;
     background-repeat: no-repeat;
     width: 90%;
@@ -309,7 +309,7 @@
     font-family: monospace;
     margin-top: 40px;
     margin-bottom: 40px;
-    background-image: url(./assets/img/contacto9.jpg);
+    background-image: url(./assets/img/contacto9.webp);
     background-size: cover;
     background-repeat: no-repeat;
     width: 90%;
@@ -887,7 +887,7 @@
     height: 600px;
     width: 100%;
     margin-top: -410px;
-    background-image: url(./assets/img/contacto6.jpg);
+    background-image: url(./assets/img/contacto6.webp);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 0px;
@@ -1125,7 +1125,7 @@
 
   /*CONSULTAS*/
   .fsection {
-    background-image: url(./assets/img/fondoform2.jpg);
+    background-image: url(./assets/img/fondoform2.webp);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -1688,7 +1688,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 5px;
-    background-image: url(./assets/img/SanClemente1.jpg);
+    background-image: url(./assets/img/SanClemente1.webp);
     border-radius: 15px;
   }
 
@@ -1790,7 +1790,7 @@
     font-family: monospace;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-image: url(./assets/img/contacto9.jpg);
+    background-image: url(./assets/img/contacto9.webp);
     background-size: cover;
     background-repeat: no-repeat;
     width: 95%;
@@ -1930,7 +1930,7 @@
   }
 
   .fsection {
-    background-image: url(./assets/img/fondoform2.jpg);
+    background-image: url(./assets/img/fondoform2.webp);
     background-size: cover;
     background-repeat: no-repeat;
     width: 95%;
