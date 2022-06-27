@@ -1,6 +1,6 @@
 import React from "react";
-/* import mundomarino from "../assets/img/mundo marino.jpg";
-import termasmarinas from "../assets/img/termas1.jpg"; */
+import mundomarino from "../assets/img/mundo marino.jpg";
+import termasmarinas from "../assets/img/termas1.jpg";
 import facebook from "../assets/img/facebook-logo-3-1.png";
 
 
@@ -37,7 +37,7 @@ const Home = () => {
         <h2 className="tittle2 ">ATRACTIVOS TURÍSTICOS</h2>
         <hr style={{ width: "90%" }}/>
 
-     {/*    <section className="sitios">
+        <section className="sitios">
 
             <div className="mm">
                         <img style={{ width: "230px" }} src={mundomarino} alt="" />
@@ -48,7 +48,7 @@ const Home = () => {
                         <img style={{width: "190px"}} src={termasmarinas} alt=""/>
                 <button type="button " className="btn "><a href="https://termasmarinas.com.ar/" target="_blank ">SITIO WEB</a></button>
             </div>
-        </section>  */}
+        </section> 
 </>
             
   );
