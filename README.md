@@ -6,8 +6,8 @@ Es un proyecto desarrollado en React JS y está destinado a promover alojamiento
 
 Seguir los siguientes pasos:
 
-1- `npm install`
-2- `npm start`
+1- `npm install` \
+2- `npm start` \
 3- Inicia en modo desarrollo: [http://localhost:3000](http://localhost:3000).
 
 ## Repositorio GITHUB
