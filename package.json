@@ -1,5 +1,6 @@
 {
   "name": "sancleresidenciasreact",
+  "author": "Sergio Muñoz",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

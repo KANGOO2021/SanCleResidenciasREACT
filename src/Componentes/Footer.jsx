@@ -7,8 +7,6 @@ const Footer = () => {
   const date = `${current.getFullYear()} `;
     return (  
         
-
-
         <footer className="footer">
          <div className="hrfooter"> <hr /> </div>
         <span>&copy; {date}</span>
