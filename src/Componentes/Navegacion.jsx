@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
-import logo from "../assets/img/logo.webp";
+import logo from "../assets/img/logo.png";
 import '../App.css';
 
 import {
