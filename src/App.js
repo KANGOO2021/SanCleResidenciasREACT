@@ -3,18 +3,21 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
 
-import Navegacion from './Componentes/Navegacion';
+/* import Navegacion from './Componentes/Navegacion';
 import Home from './Componentes/Home';
-import Footer from './Componentes/Footer';
+import Footer from './Componentes/Footer'; */
 
 /* import Traslados from './Componentes/Traslados';
 import Formulario from './Componentes/Formulario';
 import Contacto from './Componentes/Contacto'; */
 
-
 /* import Arcoiris from './Componentes/Arcoiris';
 import Medanos from './Componentes/Medanos'; */
+import Loader from './Componentes/Loader';
 
+const Navegacion = lazy(() => import("./Componentes/Navegacion"))
+const Home = lazy(() => import("./Componentes/Home"))
+const Footer = lazy(() => import("./Componentes/Home"))
 const Arcoiris = lazy(() => import("./Componentes/Arcoiris"))
 const Medanos = lazy(() => import("./Componentes/Medanos"))
 const Formulario = lazy(() => import("./Componentes/Formulario"))
@@ -25,8 +28,8 @@ const Traslados = lazy(() => import("./Componentes/Traslados"))
 
 function App() {
   return (
-    <>
-    <Suspense fallback={<div></div>}>
+    
+    <Suspense fallback={<Loader />}>
       <Navegacion />
 
       <Routes>
@@ -46,8 +49,8 @@ function App() {
       </Routes>
 
       <Footer />
-    </Suspense>
-    </>
+  </Suspense>
+    
   );
 }
 
