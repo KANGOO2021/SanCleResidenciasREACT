@@ -5,7 +5,7 @@ import facebook from "../assets/img/facebook-logo-3-1.png";
 
 
 const Home = () => {
-    const fecha = () => {
+    /* const fecha = () => {
         const current = new Date();
         const date = `${current.getFullYear()} `;
         const date2 = `${current.getMonth() + 1}`;
@@ -20,16 +20,16 @@ const Home = () => {
         const current = new Date();
         const date = `${current.getFullYear()}`;
         return (date - origen)
-    }
+    } */
    
     return (  
 <>
         <section className="section" id="home">
             <div className="tex">
-                <p className="p1" id="home2">¡VENI A DISFRUTAR TUS VACACIONES {fecha()} EN SAN CLEMENTE DEL TUYÚ!</p>
+                <p className="p1" id="home2">¡VENI A DISFRUTAR TUS VACACIONES {/* {fecha()} */} EN SAN CLEMENTE DEL TUYÚ!</p>
             </div>
             <div className="tex2">
-                <p className="p2">Visítanos en Facebook, {años()} años de alquiler y traslados consecutivos</p>
+                <p className="p2">Visítanos en Facebook, {/* {años()} */} años de alquiler y traslados consecutivos</p>
                         <a href="https://www.facebook.com/profile.php?id=100007425427174" target="_blank "><img id="face" style={{ width: "50px" }} src={facebook} alt=""/></a>
             </div>
         </section>
