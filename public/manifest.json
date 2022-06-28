@@ -1,10 +1,10 @@
 {
   "short_name": "React App",
-  "name": "Tu lugar de Vacaciones",
+  "name": "Tu lugar de Vacaciones!",
   "icons": [
     {
-      "src": "logo..png",
-      "sizes": "64x64",
+      "src": "logo.ico",
+      "sizes": "32x32",
       "type": "image/x-icon"
     }
   ],
